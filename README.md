@@ -14,6 +14,14 @@
 
 
 
+### Compile and run OpenMP programs
+
+```
+gcc -fopenmp [filename].c -o [filename]
+```
+
+
+
 ### Tasks
 
 This problem has particular importance in the design of future high performance interconnection networks for supercomputer architectures, because it represents a quantity that is similar to the more fundamental network bi-section width: the minimum number of edges required to be cut in order to separate the network roughly into two halves. 
