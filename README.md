@@ -2,9 +2,13 @@
 
 
 
-### [Tutorial](https://www.youtube.com/playlist?list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG)
+### [Tutorial Videos](https://www.youtube.com/playlist?list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG)
 
-### [Examples](resources/openmp-examples-4.5.0.pdf)
+### [Tutorial Code](https://github.com/tgmattso/OpenMP_intro_tutorial)
+
+### [Tutorial Slides](resources/Intro_To_OpenMP_Mattson.pdf)
+
+### [OpenMP Examples](resources/openmp-examples-4.5.0.pdf)
 
 ### [Project 1 - Specification](resources/proj1-spec.pdf)
 
@@ -23,4 +27,22 @@ This problem has particular importance in the design of future high performance 
    1. Make sure to think about achieving as much performance as you can on a 4 socket cluster node on Spartan; that may require you to consider its **NUMA characteristics**, and other OpenMP techniques as discussed in the lectures.
 
 3. Design and apply an appropriate methodology for **testing the performance** of your parallel implementation on a 4 socket cluster node. Your experiments should at the very least, i.e. to pass, show measurements of speedup versus number of threads/cores. You may also show more detailed measurements that demonstrate that the techniques you have implemented are indeed contributing to the performance of your approach; in order to achieve a higher grade in the project.
+
+
+
+### Checklist
+
+#### Graph Generator
+
+* Randomly generate several nodes
+* Randomly generate weights
+* Save the generated graph in a file
+
+#### Parallel Method
+
+* Single threaded implementation
+* OpenMP implementation
+* Speedup
+
+
 
