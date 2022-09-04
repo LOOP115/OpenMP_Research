@@ -43,14 +43,17 @@ This problem has particular importance in the design of future high performance 
 #### Graph Generator
 
 * Randomly generate several nodes
-* Randomly generate weights
+* Randomly generate weights between some pairs of nodes
 * Save the generated graph in a file
 
 #### Parallel Method
 
 * Single threaded implementation
+  * Generate a directed graph based on the input
+  * Traverse all pairs of nodes
+    * Compute the max flow between each pairs of nodes
+    * Update min max flow
+
 * OpenMP implementation
 * Speedup
-
-
 

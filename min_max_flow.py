@@ -7,7 +7,7 @@ def get_min_max_flow(input_path):
     graph = nx.read_edgelist(input_path, create_using=nx.DiGraph(), data=(("capacity", float),))
     # Compute the minimum of the maximum flows between all pairs of vertices
     min_max_flow = sys.float_info.max
-    print(f"Max Flow:")
+    print(f"\nMax Flow")
     for u in graph.nodes:
         for v in graph.nodes:
             if u == v:
@@ -20,4 +20,4 @@ def get_min_max_flow(input_path):
 
 
 path = "inputs/input1.txt"
-print(f"Min Max Flow: {get_min_max_flow(path)}")
+print(f"\nMin Max Flow: {get_min_max_flow(path)}")
