@@ -4,6 +4,7 @@ between all pairs of vertices in a directed graph.
 */
 
 #include <cstdio>
+#include <cstdlib>
 #include <cassert>
 #include <cstring>
 #include <climits>

@@ -14,14 +14,6 @@
 
 
 
-### Compile and run OpenMP programs
-
-```
-gcc -fopenmp [filename].c -o [filename]
-```
-
-
-
 ### Tasks
 
 This problem has particular importance in the design of future high performance interconnection networks for supercomputer architectures, because it represents a quantity that is similar to the more fundamental network bi-section width: the minimum number of edges required to be cut in order to separate the network roughly into two halves. 
@@ -53,6 +45,44 @@ This problem has particular importance in the design of future high performance 
   * Compute the max flow between each pairs of nodes ✔
 * OpenMP implementation
 * Speedup
+
+
+
+### Compile and run OpenMP programs
+
+```
+gcc -fopenmp min_max_flow.c -o min_max_flow
+g++ -fopenmp min_max_flow.cpp -o min_max_flow
+```
+
+
+
+### Spartan
+
+#### Basic
+
+* Hostname: ```spartan.hpc.unimelb.edu.au```
+* Send files to spartan: ```pscp -r p1-openmp jiahchen4@spartan.hpc.unimelb.edu.au:/home/jiahchen4```
+* Check all modules: ```module avail```
+* Load module: ```module load [module] / module unload [module] ```
+* Check module list: ```module list```
+
+#### Scheduler
+
+* List of partitions: ```sinfo -s```
+* Partition utilisation: ```sinfo -p physical -O cpusstates```
+* Job priority: ```sprio -j [jobid]```
+
+#### Job Submission
+
+* [Script generator](https://dashboard.hpc.unimelb.edu.au/forms/script_generator/)
+* Submit a job: ```sbatch [file].slurm```
+
+#### Job Monitor
+
+* Check status & review output: ```squeue -j [jobid]```
+* Check my job: ```squeue -u [username]```
+* List the queue: ```squeue  (| more)```
 
 
 
