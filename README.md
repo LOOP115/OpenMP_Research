@@ -48,12 +48,21 @@ This problem has particular importance in the design of future high performance 
 
 #### Parallel Method
 
-* Single threaded implementation
-  * Generate a directed graph based on the input
-  * Traverse all pairs of nodes
-    * Compute the max flow between each pairs of nodes
-    * Update min max flow
-
+* Single threaded implementation ✔
+  * Generate a directed graph based on the input ✔
+  * Compute the max flow between each pairs of nodes ✔
 * OpenMP implementation
 * Speedup
+
+
+
+### References
+
+#### Maximum flow
+
+* https://en.wikipedia.org/wiki/Maximum_flow_problem
+* https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm
+* https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm
+* https://www.geeksforgeeks.org/max-flow-problem-introduction/
+* https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/
 
